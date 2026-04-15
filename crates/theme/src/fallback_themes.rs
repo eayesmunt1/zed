@@ -270,6 +270,7 @@ pub(crate) fn zed_default_dark() -> Theme {
                 vim_visual_block_foreground: SystemColors::default().transparent,
                 vim_helix_normal_foreground: SystemColors::default().transparent,
                 vim_helix_select_foreground: SystemColors::default().transparent,
+                background_image_file: None,
             },
             status: StatusColors {
                 conflict: yellow,
