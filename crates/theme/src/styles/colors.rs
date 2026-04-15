@@ -2,7 +2,7 @@
 
 use gpui::{App, Hsla, SharedString, WindowBackgroundAppearance};
 use refineable::Refineable;
-use std::sync::Arc;
+use std::{path::PathBuf, sync::Arc};
 use strum::{AsRefStr, EnumIter, IntoEnumIterator};
 
 use crate::{
@@ -325,6 +325,8 @@ pub struct ThemeColors {
     pub version_control_conflict_marker_ours: Hsla,
     /// Represents the "theirs" region of a merge conflict.
     pub version_control_conflict_marker_theirs: Hsla,
+    /// Background image file path. Used for displaying a picture behind the workspace.
+    pub background_image_file: Option<Arc<PathBuf>>,
 }
 
 #[derive(EnumIter, Debug, Clone, Copy, AsRefStr)]

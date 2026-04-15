@@ -1,6 +1,7 @@
 #![allow(missing_docs)]
 
 use gpui::{HighlightStyle, Hsla};
+use std::{path::PathBuf, sync::Arc};
 use palette::FromColor;
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
@@ -815,6 +816,10 @@ pub fn theme_colors_refinement(
             .vim_helix_select_foreground
             .as_ref()
             .and_then(|color| try_parse_color(color).ok()),
+        background_image_file: this
+            .background_image_file
+            .as_ref()
+            .map(|path| Arc::new(PathBuf::from(path))),
     }
 }
 

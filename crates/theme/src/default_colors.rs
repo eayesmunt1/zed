@@ -186,6 +186,7 @@ impl ThemeColors {
             vim_visual_block_foreground: system.transparent,
             vim_helix_normal_foreground: system.transparent,
             vim_helix_select_foreground: system.transparent,
+            background_image_file: None,
         }
     }
 
@@ -332,6 +333,7 @@ impl ThemeColors {
             vim_visual_block_foreground: system.transparent,
             vim_helix_normal_foreground: system.transparent,
             vim_helix_select_foreground: system.transparent,
+            background_image_file: None,
         }
     }
 }

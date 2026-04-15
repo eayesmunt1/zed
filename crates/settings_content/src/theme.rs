@@ -1066,6 +1066,9 @@ pub struct ThemeColorsContent {
     /// Foreground color for Vim Helix Select mode indicator.
     #[serde(rename = "vim.helix_select.foreground")]
     pub vim_helix_select_foreground: Option<String>,
+    /// Path to a background image file displayed behind the workspace.
+    #[serde(rename = "background.image_file")]
+    pub background_image_file: Option<String>,
 }
 
 #[derive(Debug, Clone, Default, Serialize, Deserialize, JsonSchema, MergeFrom, PartialEq)]
